@@ -1,0 +1,23 @@
+deploy:
+  response_format: response_format.json
+  model: google/gemini-2.5-pro
+  api_parameters:
+    stream: False
+    max_tokens: 500
+    temperature: 0.5
+    presence_penalty: 0.0
+    frequency_penalty: 0.0
+    provider:
+      require_parameters: False
+
+test:
+  response_format: response_format.json
+  model: deepseek/deepseek-r1-0528:free
+  api_parameters:
+    stream: False
+    max_tokens: 500
+    temperature: 0.5
+    presence_penalty: 0.0
+    frequency_penalty: 0.0
+    provider:
+      require_parameters: False
