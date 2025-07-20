@@ -3,7 +3,7 @@ deploy:
   model: google/gemini-2.5-pro
   api_parameters:
     stream: False
-    max_tokens: 500
+    max_tokens: 4096
     temperature: 0.5
     presence_penalty: 0.0
     frequency_penalty: 0.0
